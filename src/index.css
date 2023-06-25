@@ -1,38 +1,30 @@
-/* body {
-    background-image: url(/img/fondo4.jpeg);
-    background-position: center;
-} */
 
-.title{
-    /* background-color: aliceblue; */
+h1{
     color: white;
+    margin-left: 8rem;
+    font-size: 40px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 50%;
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    margin-top: 6rem;
-    width: 10rem;
-    margin-left: 10rem;
+    justify-content: center; 
 }
 
-.container {
-    /* background-color: grey; */
-    margin-top: 1rem;
-    width: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .message {
-    background-color: white;
+    background-color: #d0d0d0;
     border-radius: 3rem;
-    height: 10rem;
+    height: 7rem;
     width: 28rem;
-    text-align: center;
+    padding: 2rem;
+    text-align:left;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
 }
 
 button {
@@ -41,15 +33,47 @@ button {
     border-radius: 1rem;
     transition: 0.5s ease-in-out;
     margin-top: 2rem;
-    margin-left: 11rem;
 }
 
+button:hover{
+    background-color: gray;
+    color: white;
+  }
+
 .author{
-    margin-top: 6.4rem;
-    margin-left: 10rem;
+    margin-top: 5rem;
     color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
   
-  }
+    h1{
+        font-size: 30px; 
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 6rem;
+    }
+
+    .message {
+        margin-bottom: 2rem;
+        height: 5rem;
+        width: 17rem;
+        padding: 2rem;
+        font-size: 20px;
+    }
+
+    button {
+        width: 7rem;
+        margin-top: 2rem;
+    }
+
+    .author{
+        margin-top: 4.3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .author{
+        margin-top: 3rem;
+    }
+}

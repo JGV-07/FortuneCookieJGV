@@ -29,6 +29,10 @@ function App() {
     background-image: ${backgrounds[image]};
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 98%;
   `
 
 
