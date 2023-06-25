@@ -1,10 +1,10 @@
-const FortuneCookie = () => {
+const FortuneCookie = ({data}) => {
 
 
 
     return (
-        <article>
-            {/* //puede ser cualquier otro */}
+        <article className="container">
+            <h2 className="message"> {data.phrase} </h2>
         </article>
     )
 }
