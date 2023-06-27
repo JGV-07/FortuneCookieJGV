@@ -28,8 +28,9 @@ function App() {
   document.body.style = `
     background-image: ${backgrounds[image]};
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     text-align: center;
