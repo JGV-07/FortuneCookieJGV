@@ -29,10 +29,10 @@ function App() {
     background-image: ${backgrounds[image]};
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 98%;
   `
 
 
@@ -42,7 +42,9 @@ function App() {
       <FortuneCookie 
       data={phrases[text]}
       />
-      <button onClick={ButtonClick}>Probar mi suerte</button>
+      <div className='buttom-container'>
+        <button onClick={ButtonClick}>Probar mi suerte</button>
+      </div>
       <FortuneCookieAutor data={phrases[text]} />
     </div>
   );
