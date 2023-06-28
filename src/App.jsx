@@ -8,21 +8,21 @@ function App() {
 
   const backgrounds = ["url(/img/fondo1.jpeg)", "url(/img/fondo2.jpeg)", "url(/img/fondo3.jpeg)", "url(/img/fondo4.jpeg)"]
   
-  const [image, setImage] = useState(0);
+  const [image, setImage] = useState(0)
   const changeBackground = () => {
-    const randomBackgroundIndex = Math.floor(Math.random() * backgrounds.length);
+    const randomBackgroundIndex = Math.floor(Math.random() * (backgrounds.length - 1))
     setImage(randomBackgroundIndex)
   }
-  const [text, setText] = useState(0);
+  const [text, setText] = useState(0)
 
   const changeMessage = () => {
-    const randomIndex = Math.floor(Math.random() * phrases.length);
+    const randomIndex = Math.floor(Math.random() * (phrases.length - 1))
     setText(randomIndex)
   }
 
   const ButtonClick = () => {
-    changeMessage();
-    changeBackground();
+    changeMessage()
+    changeBackground()
   }
 
   document.body.style = `

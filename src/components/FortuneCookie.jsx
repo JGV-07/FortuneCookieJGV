@@ -1,7 +1,5 @@
 const FortuneCookie = ({data}) => {
 
-
-
     return (
     
         <h2 className="message"> 
